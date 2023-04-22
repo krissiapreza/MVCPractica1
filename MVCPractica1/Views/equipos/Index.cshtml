@@ -1,0 +1,91 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    List<tipo_equipo> listaTipoEquipos = new List<tipo_equipo> {
+    new tipo_equipo {id_tipo_equipo=1, descripcion="ACCESORIOS"},
+     new tipo_equipo { id_tipo_equipo = 1 , descripcion = "LAPTOP"},
+      new tipo_equipo {id_tipo_equipo=1, descripcion="VIDEO" }
+    };
+    List<marcas> listadoMarcas = new List<marcas> {
+    new marcas {id_marcas=1, nombre_marca="ACER"},
+     new marcas { id_marcas = 1 , nombre_marca = "HP"},
+      new marcas {id_marcas=1, nombre_marca="DELL" }
+    };
+}
+@*<form asp-action="Create">
+    <h1>Mantenimiento de equipos</h1>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            <label>Nombre</label>
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBox("nombre","Valor predeterminado",new {@class="fore-control"})
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.Label("lblDescripcion","Descripcion")
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBox("Descripcion"," ",new {@class="fore-control"})
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.Label("lblEquipos","Tipo de Equipos")
+        </div>
+        <div class="col-sm-4">
+            @Html.DropDownList("tipo_equipo_id", new SelectList(listaTipoEquipos,"id_tipo_equipos","descripcion"),"Seleccione un tipo")
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.Label("lblMarcas","Marca")
+        </div>
+        <div class="col-sm-4">
+            @Html.DropDownList("marca_id", new SelectList(listaTipoEquipos,"id_marcas","nombre_marca"),"Seleccione una marca")
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.Label("lblModelo","Modelo")
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBox("modelo"," ",new {@class="fore-control"})
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.Label("lblAnioCompra","Año de compra")
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBox("anio_compra"," ",new {@class="fore-control"})
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.Label("lblCosto","Costo")
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBox("costo"," ",new {@class="fore-control"})
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.Label("lblVidaUtil","Vida Útil")
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBox("vida_util"," ",new {@class="fore-control"})
+        </div>
+    </div>
+    <div class="fore-group row mb-4">
+        <div class="col-sm-2">
+            @Html.CheckBox("estadoEquipo") Inactivo
+        </div>
+        <div class="col-sm-4">
+            @Html.TextBox("vida_util"," ",new {@class="fore-control"})
+        </div>
+    </div>
+</form>
+*@
